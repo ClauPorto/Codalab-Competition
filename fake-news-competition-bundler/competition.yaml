@@ -1,0 +1,45 @@
+# Build an example competition
+---
+title: Fake News Detection Competition
+description: This is a competition for detection of fake news in a spanish corpus
+image: logo.png
+has_registration: True
+end_date: 2021-05-01
+html: 
+    overview: overview.html
+    evaluation: evaluation.html
+    terms: terms_and_conditions.html
+    data: data.html
+phases:
+    1:
+        phasenumber: 1
+        label: "Development"
+        description: "Development phase: Train the model and evaluate on the training set."
+        start_date: 2021-02-01
+        max_submissions: 100
+        is_scoring_only: False
+        scoring_program: program.zip
+        reference_data: reference.zip
+        public_data: dataset.zip
+        
+    2:
+        phasenumber: 2
+        label: "Evaluation"
+        start_date: 2021-04-19
+        max_submissions: 3
+        is_scoring_only: False
+        scoring_program: program.zip
+        reference_data: reference.zip
+        input_data: dataset.zip
+
+leaderboard:
+    leaderboards:
+        Results: &RESULTS
+            label: Results
+            rank: 1
+    columns:
+        F1:
+            leaderboard: *RESULTS
+            label: F1
+            numeric_format: 4
+            sort: desc

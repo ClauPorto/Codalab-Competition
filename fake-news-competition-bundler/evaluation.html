@@ -1,0 +1,20 @@
+<h1>Fake News Detection: Evaluation</h1>
+<p>The objective of this task is to decide if a news item is fake or real by analyzing its textual representation. <br />There are 2 phases:</p>
+<ul>
+<li><strong>Phase 1:</strong> development phase.&nbsp;We provide you with labeled training data and unlabeled validation and test data. Make predictions for both datasets. However, you will receive feed-back on your performance on the validation set only. The performance of your LAST submission will be displayed on the leaderboard.</li>
+<li><strong>Phase 2:</strong> final phase.&nbsp;You do not need to do anything. Your last submission of phase 1 will be automatically forwarded. Your performance on the test set will appear on the leaderboard when the organizers finish checking the submissions.</li>
+
+<p>Submissions Format:</p>
+<ul>
+<li>TaskName: fakenews</li>
+<li>IdentifierOfAnInstance: NumberOfDocument</li>
+<li>Class: {True, Fake}</li>
+
+<li>Output example:</li>
+	<ul>"fakenews"    "1"   "True"</ul>
+	<ul>"fakenews"    "2"   "Fake"</ul>
+	<ul>"fakenews"    "3"   "Fake"</ul>
+	<ul>"fakenews"    "4"   "True"</ul>
+	<ul>"fakenews"    "5"   "True"</ul>
+
+<p>The performance of your fake news detection solution will be ranked by the F1 measure on the positive class.</p>

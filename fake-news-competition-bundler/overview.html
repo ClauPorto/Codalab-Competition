@@ -1,0 +1,36 @@
+<h1>Fake News Detection</h1>
+
+<p>The corpus consists of news compiled mainly from Mexican web sources: established newspaper websites, media companies websites, special websites dedicated to validating fake news, and websites designated by different journalists as sites that regularly publish fake news. The Spanish Fake News Corpus covers the following 9 topics: Science, Sport, Economy, Education, Entertainment, Politics, Health, Security, and Society. In this new edition, we will make available the complete Spanish Fake News Corpus for training the systems, i.e. both training and testing partitions of the corpus.</br>
+
+The Spanish Fake News Corpus is a collection of news compiled from several web sources: established newspaper websites, media companies websites, special websites dedicated to validating fake news, websites designated by different journalists as sites that regularly publish fake news. The news articles were collected from January to July of 2018 and all of them were written in Mexican Spanish.</br>
+
+The corpus has 971 news collected from January to July 2018, from different sources:</p>
+
+<ul>
+	<li>Established newspapers websites</li>
+	<li>Media companies websites,</li>
+	<li>Special websites dedicated to validating fake news,</li>
+	<li>Websites designated by different journalists as sites that regularly publish fake news.</li>
+</ul>
+
+
+<p>The corpus was tagged considering only two classes (true or fake), following a manual labeling process:</br>
+
+A news article is true if there is evidence that it has been published on reliable sites.</br>
+
+A news article is fake if there is news from reliable sites or specialized websites in the detection of deceptive content that contradicts it or no other evidence was found about the news besides the source.</br>
+
+We collected the true-fake news pair of an event so there is a correlation of news in the corpus.</br>
+
+In order to avoid topic bias, the corpus covers news from 9 different topics: Science, Sport, Economy, Education, Entertainment, Politics, Health, Security, and Society. As can be seen in the table below, the number of fake and true news is quite balanced.</p>
+
+<h5>The corpus contains the following information:</h5>
+<ul>
+	<li>Category: Fake/ True</li>
+	<li>Topic: Science/ Sport/ Economy/ Education/ Entertainment/ Politics, Health/ Security/ Society</li>
+	<li>Headline: The title of the news.</li>
+	<li>Text: The complete text of the news.</li>
+	<li>Link: The URL where the news was published.</li>
+</ul>
+
+For the evaluation of systems, we will use a new testing corpus containing news related to COVID-19 and news from other Ibero-American countries. Its availability will introduce two main challenges to the task: thematic and language variation. The participating systems need to take into consideration that part of the testing corpus contains news in a topic that does not exist in the training corpus, likewise, participants should take into account that the other part of the testing corpus contains news in a different variation of the Spanish that is in the training corpus.</p>
